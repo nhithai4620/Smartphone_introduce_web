@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iphone 12 introduction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet/less" type="text/css" href="style.less" />
+    <script src="less.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="logo">
+            <img src="image/logo.png" alt="logo">
+        </div>
+        <nav>
+
+            <div class="nav-link">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Phone</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="information">
+            <img src="image/iphone-removebg.png" alt="Iphone" class="mobile">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="image/camera.png" alt="camera" style="height: 140%;">
+                    <div>
+                        <h1>Camera</h1>
+                        <p>12MP, Wide Angle Lens</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="image/processor.png" alt="processor">
+                    <div>
+                        <h1>Processor</h1>
+                        <p>Snapdragon Octa-core 11nm</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="image/display.png" alt="display" style="width: 30%; height: 150%;">
+                    <div>
+                        <h1>Display</h1>
+                        <p>6.5" Mini-Drop Fullscreen</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="image/battery.png" alt="battery" style="height: 140%; width: 110%;">
+                    <div>
+                        <h1>Battery life</h1>
+                        <p style="margin-top:8px">5000mAh, 720Hrs Standby</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="image/arrowup.png" alt="arrow up" id="Upbtn" style="height:70px; width: 70px;">
+
+            <img src="image/arrowup.png" alt="arrow up" id="Downbtn" style="height:70px; width: 70px;">
+
+            <h3 style="color: white; font-weight: bold;">Feature</h3>
+        </div>
+
+
+    </div>
+
+    <script>
+        var circle = document.getElementById("circle");
+        var Upbtn = document.getElementById("Upbtn");
+        var Downbtn = document.getElementById("Downbtn");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        Upbtn.onclick = function() 
+        {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+
+</body>
+
+</html>

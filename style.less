@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url('./image/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .logo {
+        position: absolute;    
+        left: 25px;
+        top: 15px;
+       
+
+
+        img {
+            width: 150px;
+            height: 50px;
+        }
+    }
+    nav {
+        width: 80%;
+        position: sticky;
+        margin: 20px auto ;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+
+       
+
+        .nav-link {
+            flex: 1;
+           text-align: right;
+
+           ul li {
+               list-style: none;
+               display: inline-block;
+               margin: 0 20px;
+
+               a {
+                   color: azure;
+                   text-decoration: none;
+               }
+           }
+        }
+
+    }
+
+    .information {
+        width: 1000px;
+        height: 1000px;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%);
+
+        .mobile {
+            width: 200px;
+            position: absolute;
+            top: 50%;
+            left: 35%;
+            transform : translateY(-50%);
+            z-index: 1;
+            height: 500px;
+            width: 350px;
+
+        }
+
+        #circle {
+
+            width: 1000px;
+            height: 1000px;
+            position: absolute;
+            top:0;
+            left: 0;
+            border-radius: 50%;
+            transform: rotate(0deg);
+            transition: 1s;
+            .feature{
+                position: absolute;
+                display: flex;
+                color: black;
+                img {
+                    width: 70px;
+                    
+                }
+                div {
+                    margin-left: 10px;
+            
+                }
+            }
+
+            .one {
+                top: 450px;
+                right: 40px;
+                height: 50px;
+                
+                
+            }
+            .two {
+                top: 110px;
+                left: 390px;
+                height: 60px;
+            }
+            .three {
+                bottom: 500px;
+                left: 40px;
+                height: 50px;
+            }
+            .four {
+                bottom: 140px;
+                right: 510PX;
+                width: 130px;
+                height: 60px;
+            }
+        }
+    }
+
+    .controls {
+        position: absolute;
+        right: 15%;
+        top: 70%;
+        transform: translateY(-27%);
+        text-align: center;
+        
+
+         #Upbtn {
+             width: 15px;
+             cursor: pointer;
+            
+         }
+         #Downbtn {
+            width: 15px;
+            cursor: pointer;
+            transform: rotate(180deg);
+        
+        }
+    }
+
+   
+    
+}
+
